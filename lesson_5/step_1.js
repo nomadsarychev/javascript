@@ -4,10 +4,17 @@ document.body.appendChild(field);
 
 for (let y = 0; y < 10; y++) {
     for (let x = 0; x < 10; x++) {
+<<<<<<< HEAD
         let css = x ? {} : { clear: 'left' };       //Поясните эту и следующую запись присвоения переменной вы показывали я помню ,но детали вылетили из памяти 
         let content = '';
         if (y == 0 || y == 9)
             content = x > 0 && x < 9 ? 'ABCDEFGH'.charAt(x - 1) : null; // И вот эта запись 
+=======
+        let css = x ? {} : { clear: 'left' };
+        let content = '';
+        if (y == 0 || y == 9)
+            content = x > 0 && x < 9 ? 'ABCDEFGH'.charAt(x - 1) : null;
+>>>>>>> new
         else if (x == 0 || x == 9)
             content = 9 - y;
         else css.background = (x + y) % 2 ? '#000' : '#fff';
