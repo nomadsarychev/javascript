@@ -25,21 +25,15 @@ for (var i = 0; i < mas.length; i++) {
 
 }
 
-// console.log(sum)
+
 
 
 var bascet = document.createElement('div');
 document.body.appendChild(bascet);
-// bascet.innerHTML = "Привет, мир!";
+
 if (mas.length == 0) {
     bascet.insertAdjacentHTML("afterbegin", " Корзина пуста")
 }
 else {
     bascet.insertAdjacentHTML("afterbegin", "В корзине " + i + " товаров на сумму " + sum + " рублей ")
 }
-
-// Window.onload = my_initiation;
-
-// for (i = 0; i < 10; i++) {
-//     my_initiation()
-// }
